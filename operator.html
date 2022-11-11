@@ -10,15 +10,46 @@
 <body>
     <h2>JavaScript Operators</h2>
 
-<p>x = 5, y = 2, calculate z = x + y, and display z:</p>
+<p>o = 5, p = 2, calculate q = o + p, and display q:</p>
+
+<p id="opera"></p>
+<p>A typical arithmetic operation takes two numbers and produces a new number.</p>
+
+<h2>The = Operator</h2>
+
+<p id="demo"></p>
+
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
 
 <p id="demo"></p>
 
 <script>
-var x = 5;
-var y = 2;
-var z = x + y;
-document.getElementById("demo").innerHTML = z;
+    // Operators
+var o = 5;
+var p = 2;
+var q = o + p;
+document.getElementById("opera").innerHTML = q;
+
+// Assignment
+var x = 100 + 50;
+document.getElementById("demo").innerHTML = x;
+
+// Assignment
+var x = 10;
+document.getElementById("demo").innerHTML = x;
+
+// Comparison
+function myFunction() {
+  var age, voteable;
+  age = document.getElementById("age").value;
+  voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
 </script>
 </body>
 </html>
